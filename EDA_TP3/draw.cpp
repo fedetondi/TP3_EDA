@@ -40,14 +40,14 @@ bool dibujator::inicial_setup(uint w, uint h){	//ver si en vez de devolver la es
 //*********************  draw_mode1  *******************************
 // La siguiente funcion se encarga de graficar el Modo 1, es decir,
 // se encarga de imprimir el piso y los robots.
-bool dibujator::draw_mode(robot* robots, piso& floor)
+bool dibujator::draw_mode(robot* robots, piso& p)
 {
 	// Cargo en el buffer las baldosas 
 	for (int i = 0; i < HEITH; i+=UNIDAD)		
 	{
 		for (int j = 0; j < WIDE; j+=UNIDAD)
 		{
-			if(floor.isDirty(i,j))
+			if(p.isDirty(i,j))
 			{
 				backbuffer = al_draw_bitmap(pisoSucioBmp, i, j, 0);
 			}

@@ -16,7 +16,6 @@ typedef unsigned int uint;
 
 
 
-
 class dibujator
 {
 	//aca dejo las imagenes que va a utilizar para dibujar
@@ -31,16 +30,7 @@ public:
 	bool inicial_setup(uint w, uint h);	
 	bool draw_mode(robot* robots, piso& floor);
 	bool draw_mode(uint nDeIteraciones);
-
-	/*
-	draw( uint nDeIteraciones) // mode 2
-	draw( robot& robots , piso& floor) // mode 1
-	
-	*/
 };
 
 #endif 
 
-//ALLEGRO_BITMAP *sucio = al_create_bitmap(alto, ancho);
-//sucio = al_load_bitmap(imagen sucia);
-//al_draw_bitmap(sucio, float dx, float dy, int flags)

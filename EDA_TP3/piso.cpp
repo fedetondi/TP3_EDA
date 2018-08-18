@@ -22,6 +22,8 @@ piso::piso(uint hCount, uint wCount)
 //******************************************************************
 
 //**********************  isDirty  *********************************
+// Funcion que se fija si la baldosa esta sucia
+// Devuelve un false si esta limpio y devuelve un true si esta sucio
 bool piso::isDirty(uint x, uint y)
 {
 	if ((x < w) && (y < h))
@@ -32,7 +34,9 @@ bool piso::isDirty(uint x, uint y)
 //******************************************************************
 
 //**********************  isFloorClean******************************
-bool piso::isFloorClean(uint x, uint y) // deveulve false si esta sucio, true si esta limpio
+// Funcion que se fija si el piso esta limpio
+// Devuelve un false si esta sucio y devuelve un true si esta limpio
+bool piso::isFloorClean(uint x, uint y) 
 {
 	if ((x < w) && (y < h))
 	{
